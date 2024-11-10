@@ -1,3 +1,5 @@
+let box = document.getElementById('box');
+
 function sums(arr) {
   size = arr.length;
   let sum = 0;
@@ -20,8 +22,4 @@ let arra = input.split(',');
 
 console.log('Average = ', sums(arra));
 
-// ans = sums();
-
-// console.log(ans);
-
-// console.log(sum(arr));
+box.innerHTML = 'Average = ' + sums(arra);
